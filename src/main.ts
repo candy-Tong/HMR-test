@@ -1,9 +1,11 @@
+import { test } from './sub-module';
 export const render = () => {
   const el = document.querySelector<HTMLDivElement>('#app')!;
   el.innerHTML = `
     <h1>Project: ts-file-test</h1>
     <h2>File: accept.ts</h2>
     <p>accept test2</p>
+    <p>${test}</p>
   `;
 };
 render();
